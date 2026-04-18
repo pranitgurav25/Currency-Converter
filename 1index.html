@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="converter-card"> 
+        <h2>Currency Converter</h2>
+        <p class="subtitle">Get real-time exchange rates</p>
+
+        <div class="input-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" value="1" min="1">
+        </div>
+
+        <div class="currency-group">
+            <div class="select-box">
+                <label for="from-currency">From</label>
+                <select id="from-currency"></select>
+            </div>
+            
+            <div class="swap-icon" id="swap-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="14" x2="21" y2="3"></line><polyline points="8 21 3 21 3 16"></polyline><line x1="20" y1="10" x2="3" y2="21"></line></svg>
+            </div>
+
+            <div class="select-box">
+                <label for="to-currency">To</label>
+                <select id="to-currency"></select>
+            </div>
+        </div>
+
+        <button id="convert-btn">Convert</button>
+
+        <div class="result-box">
+            <div class="result-text" id="result">1 USD = --- EUR</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
